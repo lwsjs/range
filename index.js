@@ -1,4 +1,4 @@
-module.exports = MiddlewareBase => class Cors extends MiddlewareBase {
+module.exports = MiddlewareBase => class Range extends MiddlewareBase {
   description () {
     return 'Support for HTTP Range Requests.'
   }
