@@ -2,9 +2,7 @@ const TestRunner = require('test-runner')
 const Range = require('./')
 const Lws = require('lws')
 const request = require('req-then')
-const usage = require('lws/lib/usage')
 const a = require('assert')
-usage.disable()
 
 const runner = new TestRunner()
 
