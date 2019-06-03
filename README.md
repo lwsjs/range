@@ -9,4 +9,4 @@
 
 * * *
 
-&copy; 2018 Lloyd Brookes <75pound@gmail.com>.
+&copy; 2018-19 Lloyd Brookes \<75pound@gmail.com\>.
