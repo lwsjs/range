@@ -11,7 +11,7 @@
     "request"
   ],
   "engines": {
-    "node": ">=7.6"
+    "node": ">=8"
   },
   "scripts": {
     "test": "test-runner test.js"
@@ -20,8 +20,11 @@
     "koa-range": "^0.3.0"
   },
   "devDependencies": {
-    "lws": "^1.1.7",
-    "req-then": "^0.6.4",
-    "test-runner": "^0.5.0"
-  }
+    "lws": "^2.0.0-7",
+    "node-fetch": "^2.6.0",
+    "test-runner": "^0.6.0"
+  },
+  "files": [
+    "index.js"
+  ]
 }

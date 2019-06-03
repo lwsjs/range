@@ -1,18 +1,15 @@
-const TestRunner = require('test-runner')
+const Tom = require('test-runner').Tom
 const Range = require('./')
 const Lws = require('lws')
-const request = require('req-then')
-const usage = require('lws/lib/usage')
+const fetch = require('node-fetch')
 const a = require('assert')
-usage.disable()
 
-const runner = new TestRunner()
+const tom = module.exports = new Tom('range')
 
-runner.test('simple', async function () {
+tom.test('simple', async function () {
   const port = 8000 + this.index
-  const lws = new Lws()
-  const server = lws.listen({ port, stack: Range })
-  const response = await request(`http://localhost:${port}/`)
-  a.strictEqual(response.res.headers['accept-ranges'], 'bytes')
-  server.close()
+  const lws = Lws.create({ port, stack: Range })
+  const response = await fetch(`http://localhost:${port}/`)
+  a.strictEqual(response.headers.get('accept-ranges'), 'bytes')
+  lws.server.close()
 })
