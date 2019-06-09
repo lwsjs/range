@@ -6,6 +6,7 @@
 
 # lws-range
 
+Lws middleware plugin adding support for HTTP Range requests. Wraps [koa-range](https://github.com/koajs/koa-range).
 
 * * *
 
