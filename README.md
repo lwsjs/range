@@ -1,7 +1,8 @@
-[![view on npm](https://img.shields.io/npm/v/lws-range.svg)](https://www.npmjs.org/package/lws-range)
-[![npm module downloads](https://img.shields.io/npm/dt/lws-range.svg)](https://www.npmjs.org/package/lws-range)
-[![Build Status](https://travis-ci.org/lwsjs/range.svg?branch=master)](https://travis-ci.org/lwsjs/range)
-[![Dependency Status](https://badgen.net/david/dep/lwsjs/range)](https://david-dm.org/lwsjs/range)
+[![view on npm](https://badgen.net/npm/v/lws-range)](https://www.npmjs.org/package/lws-range)
+[![npm module downloads](https://badgen.net/npm/dt/lws-range)](https://www.npmjs.org/package/lws-range)
+[![Gihub repo dependents](https://badgen.net/github/dependents-repo/lwsjs/range)](https://github.com/lwsjs/range/network/dependents?dependent_type=REPOSITORY)
+[![Gihub package dependents](https://badgen.net/github/dependents-pkg/lwsjs/range)](https://github.com/lwsjs/range/network/dependents?dependent_type=PACKAGE)
+[![Node.js CI](https://github.com/lwsjs/range/actions/workflows/node.js.yml/badge.svg)](https://github.com/lwsjs/range/actions/workflows/node.js.yml)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 
 # lws-range
@@ -10,4 +11,4 @@ Lws middleware plugin adding support for HTTP Range requests. Wraps [koa-range](
 
 * * *
 
-&copy; 2018-20 Lloyd Brookes \<75pound@gmail.com\>.
+&copy; 2018-22 Lloyd Brookes \<75pound@gmail.com\>.

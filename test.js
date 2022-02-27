@@ -1,15 +1,17 @@
-const Tom = require('test-runner').Tom
-const Range = require('./')
-const Lws = require('lws')
-const fetch = require('node-fetch')
-const a = require('assert')
+import TestRunner from 'test-runner'
+import { strict as a } from 'assert'
+import Range from 'lws-range'
+import Lws from 'lws'
+import fetch from 'node-fetch'
 
-const tom = module.exports = new Tom('range')
+const tom = new TestRunner.Tom()
 
 tom.test('simple', async function () {
   const port = 8000 + this.index
-  const lws = Lws.create({ port, stack: Range })
+  const lws = await Lws.create({ port, stack: Range })
   const response = await fetch(`http://localhost:${port}/`)
-  a.strictEqual(response.headers.get('accept-ranges'), 'bytes')
+  a.equal(response.headers.get('accept-ranges'), 'bytes')
   lws.server.close()
 })
+
+export default tom
